@@ -1,0 +1,33 @@
+{
+  "name": "{{{project.name}}}",
+  "engines": {
+    "node": ">=8.9.4"
+  },
+  "scripts": {
+    "ca": "git add -A && git-cz -av",
+    "ci": "git-cz",
+    "release": "standard-version --no-verify",
+    "release:alpha": "standard-version --prerelease alpha",
+    "release:first": "standard-version --first-release",
+    "debug": "alfy-init",
+    "clean": "alfy-cleanup",
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup"
+  },
+  "author": {
+    "name": "val-istar-guo",
+    "email": "val.istar.guo@gmail.com",
+    "url": "http://blog.miaooo.me"
+  },
+  "dependencies": {
+    "alfy": "^0.9.1"
+  },
+  "devDependencies": {
+   "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "commitizen": "^4.0.4",
+    "cz-conventional-changelog": "^3.1.0",
+    "husky": "^4.2.5",
+    "standard-version": "^7.1.0"
+  }
+}
