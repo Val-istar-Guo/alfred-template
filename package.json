@@ -1,6 +1,7 @@
 {
   "name": "@mtpl/alfred",
   "version": "0.1.0",
+  "description": "Alfred workflow template",
   "engines": {
     "node": ">=8.9.4"
   },
